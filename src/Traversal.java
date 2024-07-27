@@ -2,18 +2,6 @@ import java.util.Stack;
 
 public class Traversal {
 
-    public static class Node {
-        int data;
-        Node left;
-        Node right;
-
-        public Node(int data ,Node left,Node right) {
-            this.data=data;
-            this.left=left;
-            this.right=right;
-        }
-    }
-
     public static class Pair {
         Node node;
         int state;
@@ -27,7 +15,13 @@ public class Traversal {
 
     public static void main(String[] args) {
 
+        constructor();
+
+    }
+
+    public static Node constructor(){
         Integer[] arr = {50,25,12,null,null,37,30,null,null,null,75,62,null,70,null,null,87,null,null};
+
         Node root = new Node(arr[0],null,null);
 
         Pair rootPair = new Pair(root,1);
@@ -58,7 +52,7 @@ public class Traversal {
                 st.pop();
             }
         }
-        traversalPost(root);
+        return root;
     }
 
     public static void traversalPre(Node root) {
