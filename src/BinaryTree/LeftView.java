@@ -1,3 +1,5 @@
+package BinaryTree;
+
 import java.util.*;
 
 public class LeftView {
@@ -10,7 +12,7 @@ public class LeftView {
 
     public static List<Integer> leftView(Node root) {
         Queue<Node> q = new ArrayDeque<>();
-       // LinkedList<Node> q = new LinkedList<>();
+       // LinkedList<BinaryTree.Node> q = new LinkedList<>();
         List<Integer> l = new ArrayList<>();
         q.add(root);
 

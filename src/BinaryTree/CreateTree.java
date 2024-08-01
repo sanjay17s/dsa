@@ -1,3 +1,5 @@
+package BinaryTree;
+
 import java.util.Scanner;
 
 public class CreateTree {
@@ -14,7 +16,7 @@ public class CreateTree {
     public static Node createTree() {
         /*
         * ill ask user for data ,if user enters -1 i.e, they dont want a node so return null
-        * in other cases: root -----> data (root will point to this Node with data)
+        * in other cases: root -----> data (root will point to this BinaryTree.Node with data)
         * node needs a left and right
         * so another createTree call which will fetch me root.left iiy for root.right
         * */
