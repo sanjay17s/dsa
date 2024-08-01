@@ -8,4 +8,8 @@ public class Node {
         this.left=left;
         this.right=right;
     }
+
+    public Node(int data){
+        this.data=data;
+    }
 }
